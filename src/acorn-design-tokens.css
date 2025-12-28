@@ -1,0 +1,153 @@
+/**
+ * Acorn Design System Tokens
+ * Design Tokens für moderne Web-Anwendungen
+ */
+
+:root {
+  /* Color Primitives - Blue */
+  --color-blue-05: #deeafc;
+  --color-blue-10: #aac9fe;
+  --color-blue-20: #80a9ff;
+  --color-blue-30: #6089ff;
+  --color-blue-40: #4969ff;
+  --color-blue-50: #0059ff;
+  --color-blue-60: #0046d6;
+  --color-blue-70: #003296;
+  --color-blue-80: #002266;
+  --color-blue-90: #001236;
+
+  /* Color Primitives - Violet */
+  --color-violet-05: #f4e9ff;
+  --color-violet-10: #e5d0ff;
+  --color-violet-20: #d1b0ff;
+  --color-violet-30: #b591ff;
+  --color-violet-40: #9a73ff;
+  --color-violet-50: #7f54ff;
+  --color-violet-60: #6537e0;
+  --color-violet-70: #4c1eb8;
+  --color-violet-80: #361191;
+  --color-violet-90: #200960;
+
+  /* Color Primitives - Red */
+  --color-red-05: #ffe8e8;
+  --color-red-10: #ffc8c8;
+  --color-red-20: #ffa8a8;
+  --color-red-30: #ff8080;
+  --color-red-40: #ff4f4f;
+  --color-red-50: #ff0039;
+  --color-red-60: #d7002f;
+  --color-red-70: #a80024;
+  --color-red-80: #7a001a;
+  --color-red-90: #4c0011;
+
+  /* Color Primitives - Green */
+  --color-green-05: #d9ffee;
+  --color-green-10: #b4ffd9;
+  --color-green-20: #7fffc4;
+  --color-green-30: #5effb4;
+  --color-green-40: #3df4a4;
+  --color-green-50: #00d992;
+  --color-green-60: #00b379;
+  --color-green-70: #008c60;
+  --color-green-80: #006647;
+  --color-green-90: #00402e;
+
+  /* Color Primitives - Yellow */
+  --color-yellow-05: #fff6d4;
+  --color-yellow-10: #ffeea9;
+  --color-yellow-20: #ffe57f;
+  --color-yellow-30: #ffdd54;
+  --color-yellow-40: #ffd529;
+  --color-yellow-50: #ffcd00;
+  --color-yellow-60: #d7b000;
+  --color-yellow-70: #a88300;
+  --color-yellow-80: #7a5d00;
+  --color-yellow-90: #4c3800;
+
+  /* Neutrals - Grey scale */
+  --color-grey-05: #fbfbfe;
+  --color-grey-10: #f2f2f6;
+  --color-grey-20: #e7e7ed;
+  --color-grey-30: #d7d7db;
+  --color-grey-40: #b1b1b3;
+  --color-grey-50: #8f8f9d;
+  --color-grey-60: #5b5b66;
+  --color-grey-70: #38383d;
+  --color-grey-80: #2b2a33;
+  --color-grey-90: #1c1b22;
+
+  /* Semantic Colors */
+  --color-background: light-dark(var(--color-grey-05), var(--color-grey-90));
+  --color-surface: light-dark(#ffffff, var(--color-grey-80));
+  --color-surface-hover: light-dark(var(--color-grey-10), var(--color-grey-70));
+  
+  --color-text-primary: light-dark(var(--color-grey-90), var(--color-grey-05));
+  --color-text-secondary: light-dark(var(--color-grey-60), var(--color-grey-40));
+  
+  --color-border: light-dark(var(--color-grey-30), var(--color-grey-60));
+  --color-border-subtle: light-dark(var(--color-grey-20), var(--color-grey-70));
+  
+  /* Brand Colors */
+  --color-accent-primary: light-dark(var(--color-blue-60), var(--color-blue-40));
+  --color-accent-primary-hover: light-dark(var(--color-blue-70), var(--color-blue-50));
+  --color-accent-primary-active: light-dark(var(--color-blue-80), var(--color-blue-60));
+  
+  /* Feedback Colors */
+  --color-success: light-dark(var(--color-green-60), var(--color-green-40));
+  --color-warning: light-dark(var(--color-yellow-60), var(--color-yellow-40));
+  --color-error: light-dark(var(--color-red-60), var(--color-red-40));
+  
+  /* Typography */
+  --font-family-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
+  --font-family-monospace: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', monospace;
+  
+  --font-size-root: 15px;
+  --font-size-small: 13px;
+  --font-size-body: 15px;
+  --font-size-large: 17px;
+  --font-size-title: 22px;
+  --font-size-display: 36px;
+  
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  
+  --line-height-default: 1.6;
+  --line-height-tight: 1.4;
+  
+  /* Spacing */
+  --space-xxsmall: 4px;
+  --space-xsmall: 8px;
+  --space-small: 12px;
+  --space-medium: 16px;
+  --space-large: 24px;
+  --space-xlarge: 32px;
+  --space-xxlarge: 48px;
+  
+  /* Border Radius */
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 12px;
+  --border-radius-circle: 50%;
+  
+  /* Shadows */
+  --shadow-small: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-large: 0 4px 16px rgba(0, 0, 0, 0.15);
+  
+  /* Focus */
+  --focus-outline: 2px solid var(--color-accent-primary);
+  --focus-outline-offset: 2px;
+  
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-normal: 250ms;
+  --transition-slow: 350ms;
+}
+
+/* Color Scheme Support */
+@supports (color: light-dark(white, black)) {
+  :root {
+    color-scheme: light dark;
+  }
+}
